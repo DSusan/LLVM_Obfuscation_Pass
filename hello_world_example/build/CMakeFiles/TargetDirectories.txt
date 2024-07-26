@@ -1,7 +1,7 @@
-C:/Users/carli/OneDrive/Escritorio/DS/LLVM/LLVM_Pass/hello_world_example/build/CMakeFiles/intrinsics_gen.dir
-C:/Users/carli/OneDrive/Escritorio/DS/LLVM/LLVM_Pass/hello_world_example/build/CMakeFiles/omp_gen.dir
-C:/Users/carli/OneDrive/Escritorio/DS/LLVM/LLVM_Pass/hello_world_example/build/CMakeFiles/acc_gen.dir
-C:/Users/carli/OneDrive/Escritorio/DS/LLVM/LLVM_Pass/hello_world_example/build/CMakeFiles/RISCVTargetParserTableGen.dir
-C:/Users/carli/OneDrive/Escritorio/DS/LLVM/LLVM_Pass/hello_world_example/build/CMakeFiles/HelloWorld.dir
-C:/Users/carli/OneDrive/Escritorio/DS/LLVM/LLVM_Pass/hello_world_example/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/carli/OneDrive/Escritorio/DS/LLVM/LLVM_Pass/hello_world_example/build/CMakeFiles/ZERO_CHECK.dir
+/home/landin/LLVM_Pass/hello_world_example/build/CMakeFiles/intrinsics_gen.dir
+/home/landin/LLVM_Pass/hello_world_example/build/CMakeFiles/omp_gen.dir
+/home/landin/LLVM_Pass/hello_world_example/build/CMakeFiles/acc_gen.dir
+/home/landin/LLVM_Pass/hello_world_example/build/CMakeFiles/RISCVTargetParserTableGen.dir
+/home/landin/LLVM_Pass/hello_world_example/build/CMakeFiles/HelloWorld.dir
+/home/landin/LLVM_Pass/hello_world_example/build/CMakeFiles/edit_cache.dir
+/home/landin/LLVM_Pass/hello_world_example/build/CMakeFiles/rebuild_cache.dir

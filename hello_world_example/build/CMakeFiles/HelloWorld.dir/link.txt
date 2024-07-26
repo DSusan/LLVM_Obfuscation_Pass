@@ -1,0 +1,1 @@
+/usr/lib/llvm-18/bin/clang++ -fPIC -shared -Wl,-soname,libHelloWorld.so -o libHelloWorld.so CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o 
