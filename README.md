@@ -1,4 +1,4 @@
-# LLVM IR Transformation Pass
+# LLVM IR Transformation Passes
  LLVM  pass to obfuscate the control flow of a program at the LLVM IR level.
 
 ### Development Environment
