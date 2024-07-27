@@ -13,7 +13,6 @@ endif()
 
 add_definitions(${LLVM_DEFINITIONS})
 include_directories(${LLVM_INCLUDE_DIRS})
-link_directories(${LLVM_LIBRARY_DIRS})
 
 # C++ standard
 set(CMAKE_CXX_STANDARD 17 CACHE STRING "")
@@ -24,8 +23,4 @@ if(NOT LLVM_ENABLE_RTTI)
 endif()
 
 # Adding the target
-add_llvm_library(llvm-transformation-pass MODULE
-  IR_Transformation.cpp
-)
-
-target_link_libraries(LLVMObfuscationPass PRIVATE LLVMCore LLVMSupport)
+add_library(llvm-transformation-pass SHARED IR_Transformation.cpp)
