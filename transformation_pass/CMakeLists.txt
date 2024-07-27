@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.20)
 project(llvm-transformation-pass)
 
-set(LT_LLVM_INSTALL_DIR "" CACHE PATH "/usr/lib/llvm-18")
+set(LT_LLVM_INSTALL_DIR "" CACHE PATH "LLVM installation directory")
 
 # LLVMConfig.cmake location
 list(APPEND CMAKE_PREFIX_PATH "${LT_LLVM_INSTALL_DIR}/lib/cmake/llvm/")
-
 find_package(LLVM CONFIG)
+
 if("${LLVM_VERSION_MAJOR}" VERSION_LESS 18)
   message(FATAL_ERROR "Found LLVM ${LLVM_VERSION_MAJOR}, but need LLVM 18 or above")
 endif()
@@ -27,3 +27,5 @@ endif()
 add_llvm_library(llvm-transformation-pass MODULE
   IR_Transformation.cpp
 )
+
+target_link_libraries(LLVMObfuscationPass PRIVATE LLVMCore LLVMSupport)
