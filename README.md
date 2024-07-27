@@ -10,9 +10,16 @@
 - clang-18 (for input generation)
 - opt (to run the passes)
 
-### Building the Pass
+### Building the Passes
     export LLVM_DIR=<installation dir of llvm18>
     mkdir build
     cd build
-    cmake -DLT_LLVM_INSTALL_DIR=$LLVM_DIR <source_dir>/LLVM_PASS/transformation_pass/
+    cmake -DLT_LLVM_INSTALL_DIR=$LLVM_DIR <source_dir>/LLVM_PASS/<pass directory>/
     make
+
+### Generate Input
+    $LLVM_DIR/bin/clang -O1 -S -emit-llvm <input source file> -o <IR output file>
+
+### Run the Passes
+    $LLVM_DIR/bin/opt -load-pass-plugin=<.so library> -passes=<"pass name"> -S <IR input file> -o <IR output file>
+
