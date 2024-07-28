@@ -21,7 +21,7 @@ PreservedAnalyses SplitPass::run(Function &F, FunctionAnalysisManager &FAM) {
         OriginalBlocks.push_back(&BB);
     }
 
-    // Iterate over the collected basic blocks
+    // Iterate and split each basic block
     for (auto *BB : OriginalBlocks) {
         if (BB->empty()) continue;
 
@@ -35,7 +35,7 @@ PreservedAnalyses SplitPass::run(Function &F, FunctionAnalysisManager &FAM) {
 
     return PreservedAnalyses::all();
 }
-
+// Register the pass
 extern "C" LLVM_ATTRIBUTE_WEAK PassPluginLibraryInfo llvmGetPassPluginInfo() {
     return {
         LLVM_PLUGIN_API_VERSION, "SplitPass", LLVM_VERSION_STRING, [](PassBuilder &PB) {

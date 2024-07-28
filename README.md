@@ -17,7 +17,7 @@
     cmake -DLT_LLVM_INSTALL_DIR=$LLVM_DIR <source_dir>/LLVM_PASS/<pass directory>/
     make
 
-### Generate Input
+### Generate Inputs
     $LLVM_DIR/bin/clang -O1 -S -emit-llvm <input source file> -o <IR output file>
 
 ### Run the Passes
