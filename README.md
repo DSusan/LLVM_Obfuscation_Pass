@@ -13,6 +13,7 @@ There are three different passes inside the repository:
 ### Tools Needed
 - clang-18 (for input generation)
 - opt (to run the passes)
+- FileCheck and lit (for tests)
 
 ### Building the Passes
     export LLVM_DIR=<installation dir of llvm18>
@@ -32,3 +33,14 @@ In order to run the "transformation_pass_improved" pass with conditional branche
     $LLVM_DIR/bin/opt -load-pass-plugin=libLLVMSplitPass.so -passes="split-pass" -use-conditional -S <IR input file> -o <IR output file>
 
 Removing the flag will use unconditional branches instead.
+
+### Automatic Test
+Before doing the test, verify the paths to llvm installation and tools in run_tests.sh and the llvm binaries location in lit.cfg, then simply do:
+
+    ./run_tests.sh
+
+To get the output of the test you can also run:
+
+    lit -v ./ > ./Output/lit_output.txt 2>&1
+
+Sample output is inside  transformation_pass_improved/tests/Output directory.
