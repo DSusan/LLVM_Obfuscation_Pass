@@ -1,0 +1,7 @@
+-- Testing: 1 tests, 1 workers --
+PASS: <unnamed> :: split_BB_test.ll (1 of 1)
+
+Testing Time: 0.04s
+
+Total Discovered Tests: 1
+  Passed: 1 (100.00%)
