@@ -1,0 +1,7 @@
+/mnt/c/Users/carli/OneDrive/Escritorio/DS/LLVM_Pass/transformation_pass_improved/build/CMakeFiles/intrinsics_gen.dir
+/mnt/c/Users/carli/OneDrive/Escritorio/DS/LLVM_Pass/transformation_pass_improved/build/CMakeFiles/omp_gen.dir
+/mnt/c/Users/carli/OneDrive/Escritorio/DS/LLVM_Pass/transformation_pass_improved/build/CMakeFiles/acc_gen.dir
+/mnt/c/Users/carli/OneDrive/Escritorio/DS/LLVM_Pass/transformation_pass_improved/build/CMakeFiles/RISCVTargetParserTableGen.dir
+/mnt/c/Users/carli/OneDrive/Escritorio/DS/LLVM_Pass/transformation_pass_improved/build/CMakeFiles/llvm-transformation-pass-improved.dir
+/mnt/c/Users/carli/OneDrive/Escritorio/DS/LLVM_Pass/transformation_pass_improved/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/carli/OneDrive/Escritorio/DS/LLVM_Pass/transformation_pass_improved/build/CMakeFiles/rebuild_cache.dir
